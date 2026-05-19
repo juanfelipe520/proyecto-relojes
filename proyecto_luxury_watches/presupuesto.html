@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presupuesto</title>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo">Luxury Watches</div>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="galeria.html">Galería</a></li>
+<li><a class="activo" href="presupuesto.html">Presupuesto</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="formulario-container">
+<h1>Formulario de Presupuesto</h1>
+
+<form id="formulario">
+
+<fieldset>
+<legend>Datos de contacto</legend>
+
+<input type="text" id="nombre" placeholder="Nombre" required>
+<input type="text" id="apellidos" placeholder="Apellidos" required>
+<input type="text" id="telefono" placeholder="Teléfono" required>
+<input type="email" id="email" placeholder="Email" required>
+
+</fieldset>
+
+<fieldset>
+
+<legend>Presupuesto</legend>
+
+<select id="producto">
+<option value="500">Classic Gold - 500€</option>
+<option value="700">Silver Edition - 700€</option>
+<option value="900">Black Sport - 900€</option>
+</select>
+
+<input type="number" id="plazo" value="30">
+
+<label><input type="checkbox" class="extra" value="50"> Grabado personalizado</label>
+<label><input type="checkbox" class="extra" value="100"> Caja premium</label>
+<label><input type="checkbox" class="extra" value="150"> Garantía extendida</label>
+
+<input type="text" id="total" readonly>
+
+</fieldset>
+
+<label>
+<input type="checkbox" id="condiciones">
+Acepto condiciones
+</label>
+
+<button type="submit">Enviar</button>
+
+</form>
+
+</section>
+
+<footer>
+<p>Luxury Watches © 2025</p>
+</footer>
+
+<script src="js/presupuesto.js"></script>
+</body>
+</html>
